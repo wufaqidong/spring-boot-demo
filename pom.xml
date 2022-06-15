@@ -17,18 +17,40 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+<!--        SpringMVC整合-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+<!--        单元测试支持-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.4.4</version>
+        </dependency>
+
+<!--        springboot官方提供：spring-boot-starter-xxx-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
+<!--            <version></version>-->
+<!--        </dependency>-->
+<!--        非官方提供：xxx-spring-boot-starter-->
+<!--        <dependency>-->
+<!--            <groupId>org.mybatis.spring.boot</groupId>-->
+<!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--            <version></version>-->
+<!--        </dependency>-->
     </dependencies>
 
+<!--    插件，提供打包-->
     <build>
         <plugins>
             <plugin>
