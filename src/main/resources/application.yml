@@ -1,0 +1,41 @@
+# 所有环境公用的配置属性
+# springboot配置文件
+server:
+  port: 8080
+management:
+  endpoint:
+    health:
+      show-details: always
+  # 激活所有的actuator端点
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#描述应用
+info:
+  app-name: spring-boot-demo
+  author: qiaoqiao
+  eamil: XXX@eamil
+# 连字符
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+# profile=x的专用属性，也就是某个环境的专用属性
+# 生成环境
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+
+
+
+
+
